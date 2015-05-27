@@ -7,7 +7,7 @@
 //link gốc của website
 $config['base_url'] = 'http://localhost/angularjs/';
 // gọi ra controller mặc định(trường hợp thường là truy cập domain, file index.php
-$config['default_controller'] = 'main'; // Default controller to load
+$config['default_controller'] = 'start'; // Default controller to load
 // controller điều khiển lỗi
 $config['error_controller'] = 'error'; // Controller used for errors (e.g. 404, 500 etc)
 //config các biến để model xử lý DB, hiện tại đã hỗ trợ MySQL
