@@ -17,6 +17,14 @@ define('IMG_DIR',ROOT_DIR.'images/');
 define('SYS_DIR',ROOT_DIR.'system/');
 define('LIB_DIR',SYS_DIR.'libraries/');
 //2- Định nghĩa các function, module chạy mặc định
+require(ROOT_DIR .'config.php');
+require(SYS_DIR .'/core/model.php');
+require(SYS_DIR .'/core/view.php');
+require(SYS_DIR .'/core/controller.php');
+require(SYS_DIR .'/core/run.php');
 //3- Định nghĩa 1 số hằng toàn cục
+global $config;
+define('BASE_URL', $config['base_url']);
 //4- Chạy chương trình (web app)
+run();
 ?>
